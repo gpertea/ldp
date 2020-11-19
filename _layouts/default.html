@@ -1,11 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
   {% include head.html %}
-  <body>
-    {% include navbar.html %}
-    <div class="container-fluid"> 
-    {{content}}
+<body>
+   {% include navbar.html %}
+   <div class="container-fluid">
+    <div class="row">
+      {% include side.html %}
+      <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4 bg-light">
+        <div class="col">
+          <table class="rxMatrixTbl">
+            <thead>
+              <tr>
+                <th class="cr"></th>
+                {% for xt in site.data.regtable.clist %}
+                <th class="xt"><div><span>{{xt}}</span></div></th>
+                {% endfor %}
+              </tr>
+            </thead>
+            <tbody>
+              {% for rg in site.data.regtable.rlist %}
+              <tr>
+                <th>{{rg}}</th>
+                {% for xp in site.data.regtable.clist %}
+                 <td>777</td>
+                {% endfor %}
+              </tr>
+              {% endfor %}
+
+            </tbody>
+          </table>
+        </div>
+      </main>
     </div>
-    {% include foot.html %}
-  </body>
+  </div>
+
+
+   {% include foot.html %}
+</body>
 </html>

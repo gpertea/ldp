@@ -1,0 +1,26 @@
+rlist:
+ - DLPFC
+ - Hippocampus
+ - Caudate
+ - MPFC
+ - sACC
+ - Cerebellum
+ - Entorhinal Cortex
+ - Amygdala
+ - Median Amygdala
+ - Basolaterlal Amygdala
+ - Nucleus Accumbens
+ - Insular Cortex
+ - Subiculum
+ - Dentate Gyrus
+ - Ventral Tegmental Area
+
+clist:
+ - RNA-seq
+ - long read RNA-seq
+ - scRNA-seq
+ - micro RNA-seq
+ - WGS
+ - WGBS
+ - DNA methylation
+ - ATAC-seq
